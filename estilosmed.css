@@ -1,0 +1,71 @@
+.titulo1{
+	text-align: center;
+}
+
+.titulo2{
+	text-align: center;
+}
+
+.titulo3{
+	text-align: center;
+}
+
+.caja1{
+background: blueviolet;
+height: 10mm;
+width: 10mm;
+}
+
+.caja2{
+background: blueviolet;
+height: 10cm;
+width: 10cm;
+}
+
+.caja3{
+background: blueviolet;
+height: 10in;
+width: 10in;
+}
+
+.caja4{
+background: blueviolet;
+height: 10pt;
+width: 10pt;
+}
+
+.caja5{
+background: blueviolet;
+height: 10pc;
+width: 10pc;
+}
+
+.caja6{
+background: blueviolet;
+height: 10vh;
+width: 10vh;
+}
+
+.caja7{
+background: blueviolet;
+height: 10vw;
+width: 10vw;
+}
+
+.caja8{
+background: blueviolet;
+height: 10vmin;
+width: 10vmin;
+}
+
+.caja9{
+background: blueviolet;
+height: 10vmax;
+width: 10vmax;
+}
+
+.caja10{
+background: blueviolet;
+height: 10rem;
+width: 10rem;
+}
