@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="estilosexamen.css">
+ <title>Examen práctico Parcial 2</title>
+</head>
+<body>
+ <h1>Examen práctico Parcial 2</h1>
+ <h2>Nombre del alumno(a): Emilio Abraham Araiza Toledo </h2>
+
+ <div class="caja" onmouseover="ocultarImagen()" onmouseout="mostrarImagen()">
+    Pasa el mouse aquí
+  </div>
+
+ <img id="miImagen" src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBhaXNhamV8ZW58MHx8MHx8fDA%3D">
+
+<img id="miImagen1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ_2oII-AssPFNOvcLQ6ecJ6ZWQlUbKU3j8w&s">
+
+<img id="miImagen2" src="https://wallpapers.com/images/featured/fondos-de-paisajes-naturales-k9tfch0hpfjbaxel.jpg">
+
+<img id="miImagen3" src="https://i.pinimg.com/736x/ac/53/c7/ac53c746c0b570df28f47c53f84657e6.jpg">
+
+  <script>
+    function ocultarImagen() {
+      document.getElementById("miImagen").classList.add("oculta");
+            document.getElementById("miImagen1").classList.add("oculta");
+                  document.getElementById("miImagen2").classList.add("oculta");
+                        document.getElementById("miImagen3").classList.add("oculta");
+    }
+
+    function mostrarImagen() {
+      document.getElementById("miImagen").classList.remove("oculta");
+            document.getElementById("miImagen1").classList.remove("oculta");
+                  document.getElementById("miImagen2").classList.remove("oculta");
+                        document.getElementById("miImagen3").classList.remove("oculta");
+    }
+  </script>
+
+</body>
+
+</html>
