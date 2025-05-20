@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Pago de Estacionamiento</title>
+    <link rel="stylesheet" href="examen3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Pago de Estacionamiento</h1>
+        <label for="horas">Número de horas:</label><br />
+        <input type="text" id="horas"><br />
+        
+        <label for="tipoAuto">Tipo de automóvil:</label><br />
+        <select id="tipoAuto" required>
+            <option value="auto">Auto chico - $20</option>
+            <option value="camioneta">Camioneta - $30</option>
+            <option value="camion">Camión - $40</option>
+        </select><br />
+        
+        <button onclick="calcularPago()">Calcular total a pagar</button><br /><br />
+        <p id="resultado"></p><br />
+    </div>
+
+    <script src="examen3.js"></script>
+</body>
+</html>
