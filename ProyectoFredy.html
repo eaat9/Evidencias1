@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="icon" href="imagenestaller/logo de taller.jpg">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Taller Fredy</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="formulas.js"></script>
+<script>
+window.addEventListener('mouseover', initLandbot, { once: true });
+window.addEventListener('touchstart', initLandbot, { once: true });
+var myLandbot;
+function initLandbot() {
+  if (!myLandbot) {
+    var s = document.createElement('script');
+    s.type = "module"
+    s.async = true;
+    s.addEventListener('load', function() {
+      myLandbot = new Landbot.Popup({
+        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2930561-9LQF91S64JBY37PC/index.json',
+      });
+    });
+    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
+}
+</script>
+
+
+
+
+	<link rel="stylesheet" type="text/css" href="estilosProyectoFredy.css">
+
+</head>
+
+
+
+<body style="background-color: white;">
+	<div class="capa"> <!--Inline table hace que no se salgan las cajas y tablas del margen -->
+
+
+		<header>
+			<nav>
+
+				<ul style="list-style-type: none; color: white; align-self: center;">
+
+
+					<li><a href="ProyectoFredy.html">INFORMACIÓN</a></li>
+					<li><a href="contacto.html">CONTACTO</a></li>
+					<li><a href="Formulario.html">AGENDA</a></li>
+					<li><a href="galeria.html">GALERÍA</a></li>
+					
+
+
+				</ul>
+
+			</nav>
+		</header>
+
+		<div
+			style="margin-top: 75px; color: white; padding-top: 5vh; padding-bottom: 5vh; background-image: url(imagenestaller/moto.jpg); ">
+			<div class="conten">
+
+				<div class="tet" style="text-align:center; ">
+					<img style="max-width:  90%; max-height: 90%; " src="imagenestaller/logo de taller.jpg">
+					<h1 style="font-size: 2em; text-align: center; font-family: Boldonse, system-ui;">TALLER DE MOTOS
+						FREDY</h1>
+					<h2>Servicio Online</h2>
+				</div>
+			</div>
+		</div>
+
+		<!--------------->
+		<h2
+			style=" font-size: 1.5em;font-family: Boldonse, system-ui; color: rgb(142, 54, 57); text-align: center; padding-top: 20px; padding-bottom: 20px; background-color: white;">
+			SOBRE NOSOTROS</h2>
+
+		<table style=" margin: auto; width: 60%; background-color: white;">
+			<tbody>
+
+				<tr>
+					<!--Filas-->
+
+					<td style="text-align:center; font-family: system-ui;">
+						<h2 style="font-size: 1.2em; color: rgb(142, 54, 57);">DESCRIPCIÓN</h2>
+
+						<p style="color: black;margin-inline: 20px;">El taller de motos "Fredy" ofrece una amplia gama
+							de servicios de mecánica en general para motocicletas, junto con una atención al cliente de
+							calidad. Si estás buscando un lugar confiable para el cuidado de tu motocicleta, no dudes en
+							visitarnos y conocer nuestros servicios.
+						</p>
+
+					</td>
+				</tr>
+				<tr> <!--ESPACIO EN BLANCO -->
+					<td style="border: none; height: 20px;">
+
+					</td>
+
+
+				</tr>
+				<tr>
+					<td style="text-align:center; font-family: system-ui;">
+						<h2 style="font-size: 1.2em; color: rgb(142, 54, 57);">NUESTRO OBJETIVO</h2>
+						<p style="color: black;margin-inline: 20px;">El taller de motos "Fredy" ofrece una amplia gama
+							de servicios de mecánica en general para motocicletas, junto con una atención al cliente de
+							calidad. Si estás buscando un lugar confiable para el cuidado de tu motocicleta, no dudes en
+							visitarnos y conocer nuestros servicios.</p>
+						<img style="max-width: 80%; max-height: 80%; display: run-in; margin: 20px; "
+							src="imagenestaller/taller5edit.jpg">
+					</td>
+				</tr>
+
+
+			</tbody>
+		</table>
+
+		<h2
+			style=" font-size: 1.5em;font-family: Boldonse, system-ui; color: rgb(142, 54, 57); text-align: center; padding-top: 40px; padding-bottom: 40px; background-color: white;">
+			NUESTROS SERVICIOS</h2>
+
+			<!--MANTENIMIENTO MENOR-->
+		<section class="servicios">
+			<button class="imostrar1" style=" width: 100%; padding-left: 20px; padding-top: 5px; padding-bottom: 5px; margin: auto;" onclick="toggleTabla('tmenor')">
+											
+				<div >
+					<h2 style=" font-size: 1.2em;font-family: Boldonse, system-ui; color: white;">
+						Mantenimiento Menor
+					</h2>
+				</div>
+
+				</button>
+		</section>
+
+		
+		<table id="tmenor" class="tablaservicios">
+				<tbody>
+
+
+					<tr> <!--Filas-->
+						<td
+							style="text-align: left; border: none; background-color: white; padding-inline: 10px; padding-top: 5px; ">
+							<ol type="1" style=" font-size: 1.5vh;">
+								<li style="margin-bottom: 8px;">
+									<h1>Cambio de aceite</h1>
+								</li>
+								<li style="margin-bottom: 8px;">
+									<h1>Cambio de filtros</h1>
+								</li>
+								<li style="margin-bottom: 8px;">
+									<h1>Cambio de bujía</h1>
+								</li>
+								<li style="margin-bottom: 8px;">
+									<h1>Lavado de Carburador</h1>
+								</li>
+								<li style="margin-bottom: 8px;">
+									<h1>Ajuste de válvulas</h1>
+								</li>
+								<li style="margin-bottom: 8px;">
+									<h1>Ajuste de Frenos y clutch</h1>
+								</li>
+								<li style="margin-bottom: 8px;">
+									<h1>Lubricación de chicotes</h1>
+								</li>
+								<li style="margin-bottom: 8px;">
+									<h1>Lavado y engrasado</h1>
+								</li>
+
+							</ol>
+
+						</td>
+						<td
+							style="text-align: left; border: none; background-color: white; padding-inline: 10px; padding-top: 20px;height: 50vh; width: 60%;">
+
+							<img style="max-width: 100%; max-height: 100%" src="imagenestaller/taller2.jpg">
+
+						</td>
+					</tr>
+
+
+
+
+				</tbody>
+		</table>
+		
+		
+		<!-----------MANTENIMIENTO ECONÓMICO ---------->
+		<section class="servicios">
+			<button class="imostrar1" style=" width: 100%; padding-left: 20px; padding-top: 5px; padding-bottom: 5px; margin: auto;" onclick="toggleTabla('teconomico')">
+											
+				<div >
+					<h2 style=" font-size: 1.2em;font-family: Boldonse, system-ui; color: white;">
+						Mantenimiento Económico
+					</h2>
+				</div>
+
+				</button>
+		</section>
+		
+
+
+		<table id="teconomico" class="tablaservicios">
+			<tbody>
+
+				<tr> <!--Filas-->
+					<td
+						style="text-align: left; border: none; background-color: white; padding-inline: 10px; padding-top: 5px; ">
+						<ol type="1" style=" font-size: 1.5vh;">
+							<li style="margin-bottom: 8px;">
+								<h1>Cambio de aceite</h1>
+							</li>
+							<li style="margin-bottom: 8px;">
+								<h1>Limpieza de filtro</h1>
+							</li>
+							<li style="margin-bottom: 8px;">
+								<h1>Cambio de bujía</h1>
+							</li>
+							<li style="margin-bottom: 8px;">
+								<h1>Lavado y engrasado</h1>
+							</li>
+
+
+						</ol>
+
+					</td>
+					<td
+						style="text-align: left; border: none; background-color: white; padding-inline: 10px; padding-top: 20px;height: 40vh; width: 60%;">
+
+						<img style="max-width: 100%; max-height: 100%" src="imagenestaller/taller10.jpeg">
+
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	
+
+		<!-----------MANTENIMIENTO BÁSICO ---------->
+		<section class="servicios">
+			<button class="imostrar1" style=" width: 100%; padding-left: 20px; padding-top: 5px; padding-bottom: 5px; margin: auto;" onclick="toggleTabla('tbasico')">
+											
+				<div >
+					<h2 style=" font-size: 1.2em;font-family: Boldonse, system-ui; color: white;">
+						Mantenimiento Básico
+					</h2>
+				</div>
+
+				</button>
+		</section>
+
+		<table id="tbasico" class="tablaservicios">
+			<tbody>
+
+				<tr> <!--Filas-->
+					<td
+						style="text-align: left; border: none; background-color: white; padding-inline: 10px; padding-top: 5px; ">
+						<ol type="1" style=" font-size: 1.5vh;">
+							<li style="margin-bottom: 8px;">
+								<h1>Cambio de aceite</h1>
+							</li>
+							<li style="margin-bottom: 8px;">
+								<h1>Limpieza de filtro</h1>
+							</li>
+							<li style="margin-bottom: 8px;">
+								<h1>Cambio de bujía</h1>
+							</li>
+							<li style="margin-bottom: 8px;">
+								<h1>Lavado de carburador</h1>
+							</li>
+							<li style="margin-bottom: 8px;">
+								<h1>Lavado y engrasado</h1>
+							</li>
+
+
+						</ol>
+
+					</td>
+					<td
+						style="text-align: left; border: none; background-color: white; padding-inline: 10px; padding-top: 20px; height: 50vh; width: 60%;">
+
+						<img style="max-width: 100%; max-height: 100%" src="imagenestaller/taller15.jpeg">
+
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+
+
+		<footer
+			style="background: black; font-family: Boldonse, system-ui; text-align:center;  border: 6px solid black; color: white;padding-top: 20px; margin-top: 10px; padding-bottom: 20px; ">
+			<p style="font-size: 12px;">Página web desarrollada para la materia de Programación Web I.<br>Primavera 2025.<br> Universidad
+				politécnica de San Luis Potosí</p>
+
+
+		</footer>
+
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,401 @@
+
+#mostrar{
+	display: none;
+}
+
+
+
+header {
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 75px;
+    
+}
+
+h1{
+	font-size: 1.5em;
+	
+	
+}
+
+h3{
+	color: black;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+
+.preguntas button {
+	border: none;
+	background-color: white;
+	
+}
+
+nav ul {
+  
+  overflow: hidden; /* Limpiamos errores de float */
+  
+
+}
+
+nav ul li {
+ float: left;
+ 
+
+  
+}
+
+
+
+li a{
+	text-decoration: none;
+	color: white;
+	margin-inline: 4px;
+	border-radius: 4px;
+	font-size: 15px;
+	display: inline-block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+	letter-spacing: 2px; /* Ajustar según palabra */
+  	padding: 20px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+  	text-decoration: none;
+}
+
+li a:hover{
+	margin-inline: 4px;
+	color: #591C21;
+	background-color:white;
+	border-radius: 4px;
+	padding:20px;
+	cursor: pointer;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 16px;
+}
+
+td{
+	background-color: white;
+	border: 8px solid rgb(60, 1, 1);
+	border-radius: 15px;
+	
+}
+
+.redes td{
+	
+	border: none;
+	width: 25%;
+	background-color: white;
+	border-radius: 10px;
+	
+}
+
+.conten{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+
+button .botonimostrar{
+
+	padding-right: 30px; 
+	width: 10%; 
+	margin: auto;
+	text-align: right;
+
+}
+
+
+.imostrar1{
+	margin: auto;
+	margin-top: 10px; 
+	background-color: rgb(34, 1, 1); 
+	display: flex;
+	width: 80%;
+
+
+
+}
+
+
+
+
+.imostrar1:hover{
+	cursor: pointer;
+	margin: auto;
+	margin-top: 10px; 
+	background-color: rgb(34, 1, 1);
+	
+	display: flex;
+	width: 80%;
+
+}
+
+.imostrar2{
+	background-color: white; 
+	width: 100%; 
+	height: 60%; 
+	border-radius: 8px; 
+	
+
+}
+
+.imostrar2:hover{
+	cursor: pointer;
+	background-color: white; 
+	width: 100%; 
+	height: 60%; 
+	border-radius: 8px; 
+
+}
+
+.contenido{
+	display: flex;
+	flex-direction: space-between;
+	flex: 1;
+	
+	
+}
+
+.bloque1{
+	border: 1px solid lightgray;
+	margin: 15px;
+	padding: 20px;
+	flex: 1;
+	box-shadow: 5px 5px rgba(255, 255, 255, 0.857); /* (rojo, verde, azul, opacidad)*/
+	border-radius: 8px;
+}
+
+
+.preguntas{
+		
+	color: black;
+	background-color: white;
+	width: 80%;
+	font-size: 1.2em;
+	border: 6px solid gray;
+	border-radius: 10px;
+	padding: 5px;
+	margin: auto;
+	margin-bottom: 2px;
+	
+	
+}
+
+.preguntas:hover{
+	cursor: pointer;
+	background-color: rgba(106, 100, 100, 0.387);
+	
+}
+
+.btnpregunta{
+	background-color: white;
+	width: 100%;
+	border: none;
+	display: flex;
+	
+	
+}
+
+
+
+.respuesta{
+	width: 80%; 
+	background-color: rgba(190, 9, 9, 0.507);
+	color: white;  
+	font-size: 1.2em;	
+	padding: 5px;
+	margin: auto;
+	border-radius: 6px;
+	flex: 3;
+	display: none;
+	margin-bottom: 10px;
+	box-shadow: 2px 2px rgba(228, 9, 9, 0.857); /* (rojo, verde, azul, opacidad)*/
+	
+	
+	
+}
+
+.servicios{
+	margin: auto;
+	margin-top: 10px; 
+	background-color: rgb(34, 1, 1); 
+	display: flex;
+	width: 80%;
+}
+
+.tablaservicios{
+	margin: auto; 
+	margin-top: 20px; 
+	background-color: white; 
+	border:4px solid gray;
+	border-radius: 8px; 
+	padding-block: 5px; 
+	display: none;
+}
+
+
+
+
+
+
+
+.preguntas h3{
+	color: black;
+}
+
+.tex{
+	margin-right: 50px;
+}
+
+.imagen{
+	width: 400px;
+	height: 300px;
+}
+
+
+
+
+/* FORMULARIO */
+label[for="cliente"- "numero"-"fecha"-"correo"-"servicios"-"servicio1"-"servicio2"-"servicio3"]{
+	color: black;
+	font-size: 2em;
+}
+
+input[type="text"]{
+	width: 90%;
+	border-radius: 3px;
+	text-align: center;
+	border: 2px solid black;
+	padding: 5px;
+	margin: auto;
+	margin-bottom: 10px;
+	
+}
+
+input[type="tel"]{
+	width: 90%;
+	border-radius: 3px;
+	text-align: center;
+	border: 2px solid black;
+	padding: 5px;
+	margin: auto;
+	margin-bottom: 10px;
+	
+}
+
+input[type="email"]{
+	width: 90%;
+	border-radius: 3px;
+	text-align: center;
+	border: 2px solid black;
+	padding: 5px;
+	margin: auto;
+	margin-bottom: 10px;
+	
+}
+
+input[type="datetime-local"]{
+	width: 90%;
+	border-radius: 3px;
+	text-align: center;
+	border: 2px solid black;
+	padding: 5px;
+	margin: auto;
+	margin-bottom: 10px;
+	
+}
+
+input[type="file"]{
+	width: 90%;
+	border-radius: 3px;
+	text-align: center;
+	border: 2px solid black;
+	padding: 5px;
+	margin: auto;
+	margin-bottom: 10px;
+
+}
+
+
+
+/* Responsive Design */
+@media(max-width:800px){
+	
+	nav ul{
+		display: flex;
+		text-align: center;
+	}
+	
+	li a{
+		padding: 10px;
+		font-size: 11px;
+		
+	
+	}
+	
+	li a:hover{
+		padding: 10px;
+		font-size: 12px;
+	}
+
+	h3{
+		font-size: 20px;
+	}
+
+	.contenido{
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
+	
+ 
+ /* Caja de comentarios */
+.comentarios-container {
+    max-width: 600px;
+    margin: auto;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.comentario {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+.nombre {
+    font-weight: bold;
+    color: #007bff;
+}
+
+
+
+
+
+
+
+
+

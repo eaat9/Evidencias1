@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="imagenestaller/logo de taller.jpg">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<title>Agenda una Cita</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="formulas.js"></script>
+<link rel="stylesheet" type="text/css" href="estilosProyectoFredy.css">
+<link rel="stylesheet" type="text/css" href="agenda.css">
+	<!--SCRIPTS PARA GENERAR PDF-->
+
+	<script type="text/javascript" src="jspdf/js/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="jspdf/js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="jspdf/jspdf.js"></script>
+
+	<script type="text/javascript" src="jspdf/jspdf.plugin.addimage.js"></script>
+
+	<script type="text/javascript" src="jspdf/jspdf.plugin.standard_fonts_metrics.js"></script>
+	<script type="text/javascript" src="jspdf/jspdf.plugin.split_text_to_size.js"></script>
+	<script type="text/javascript" src="jspdf/jspdf.plugin.from_html.js"></script>
+
+	<script type="text/javascript">
+		function generar()
+		{
+			var doc = new jsPDF();
+			doc.setFontSize(12);
+			doc.setTextColor(0,0, 255);
+			doc.text(20, 5, 'TALLER DE FREDY.com');
+			doc.setFontSize(22);
+			doc.setTextColor(0, 0, 0);
+			doc.text(30, 20, 'INFORMACIÓN DE LA CITA AGENDADA');
+			doc.setFontSize(16);
+			doc.setTextColor(0, 0, 0);
+
+			
+
+			var cliente = document.getElementById('cliente').value;
+			var numero = document.getElementById('numero').value;
+			var correo = document.getElementById('correo').value;
+			var fecha = document.getElementById('fecha').value;
+			var servicio = document.querySelector('input[name="servicio"]:checked') ? document.querySelector('input[name="servicio"]:checked').value : 'No seleccionado';
+			var imgData = document.getElementById('imagen').files[0];
+			if (imgData) {
+				var reader = new FileReader();
+				reader.onload = function (e) {
+					var img = new Image();
+					img.onload = function () {
+						doc.addImage(e.target.result, 'JPEG', 20, 110, 50, 50); // Adjust dimensions as needed
+					};
+					img.src = e.target.result;
+				};
+				reader.readAsDataURL(imgData);
+			} else {
+				doc.text(20, 110, 'No se adjuntó ninguna imagen.');
+			}
+
+			doc.text(20, 50, 'Datos del Cliente:');
+			doc.text(20, 60, 'Nombre: ' + cliente);
+			doc.text(20, 70, 'Número: ' + numero);
+			doc.text(20, 80, 'Correo: ' + correo);
+			doc.text(20, 90, 'Fecha y Hora: ' + fecha);
+			doc.text(20, 100, 'Servicio: ' + servicio);
+
+			
+			
+			
+			
+    		
+			
+
+			var string = doc.output('datauristring');
+			$('iframe').attr('src', string);
+
+
+			
+		
+		}
+
+	</script>
+
+
+
+	<!--FIN SCRPITS PARA PDF-->
+
+	
+
+		
+
+
+
+</head>
+
+
+
+<body >
+	<div class="capa"> <!--Inline table hace que no se salgan las cajas y tablas del margen -->
+
+
+<header>
+<nav>
+
+	<ul style="list-style-type: none; color: white; align-self: center;">
+
+		
+		<li><a href="ProyectoFredy.html">INFORMACIÓN</a></li>
+		<li><a href="contacto.html">CONTACTO</a></li>
+		<li><a href="Formulario.html">AGENDA</a></li>
+		<li><a href="galeria.html">GALERÍA</a></li>
+	
+		
+		
+	</ul>
+
+</nav>
+</header>
+
+
+
+
+	<div
+		style="margin-top: 95px; margin-bottom: 100px; color: white; padding-top: 5vh; padding-bottom: 5vh; background-image: url(imagenestaller/moto3.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; height: 30vh;">
+		<div class="conten">
+	
+			<div class="tet" style="text-align:center; ">
+			</br>
+				<h1 style="font-size: 2em; text-align: center; font-family: Boldonse, system-ui;">AGENDA UNA CITA</h1>
+				<h2>Contamos con gran disponibilidad de horario</h2>
+			</div>
+		</div>
+	</div>
+
+<!--ABRIMOS CAJA DEL FORMULARIO-->
+
+<div class="cajaformulario" id="cajaformulario" style=" border-radius: 4px; border: 2px solid; background-color:  rgb(37, 36, 36); flex-direction: column; width: 60%; display: flex; background-color: rgb(252, 252, 252); margin: auto; margin-bottom: 10px; padding-bottom: 20px; ">
+	
+	<!--ABRIMOS CAJA ENCABEZADO-->
+	<div class="encabezadoform" style=" width: 100%; background-color: rgb(37, 36, 36); height: 80px; text-align: center;">
+		<h2 style="color: white;">FORMULARIO DE SERVICIO</h2>
+	</div>
+	
+
+
+	<!--ABRIMOS CAJA CON FORMULARIO-->
+	<div class="cajaform" id="cajaform" style="width: 100%; display: flex;  padding-top: 30px; background-color: rgb(255, 255, 255); flex-direction: column;">
+		<form name="formulario"  style="background-color: rgb(255, 255, 255); margin: auto; width: 80%;">
+
+			<div style="width: 100%; box-sizing: border-box; padding: 4px; background-color: rgb(255, 255, 255);"> 
+
+				<label for="cliente" > Nombre del cliente: </label>
+					<input type="text" name="cliente" id="cliente" placeholder="Cliente"></br></br>
+				
+				<label  for="numero"> Número telefonico: </label>
+					<input type="tel" name="numero" id="numero" placeholder="Número"></br></br>
+
+				<label for="correo"> Correo electrónico: </label></br>
+					<input type="email" name="correo" id="correo" placeholder="Correo"></br></br></br>
+				
+			</div>
+			<div style="width: 100%; box-sizing: border-box; padding: 4px; background-color: rgb(255, 255, 255); border-top: 2px solid black;">
+				
+				
+				</br><label for="fecha"> Fecha y Hora del servicio: </label></br>
+					<input type="Datetime-local" name="fecha" id="fecha"></br></br>
+
+
+				<label for="servicios"> Tipo del servicio: </label><br>
+					<input type="radio" id="servicio" name="servicio" value="Mantenimiento Menor">
+					<label  for="servicio1">Mantenimiento Menor</label><br>
+					<input type="radio" id="servicio" name="servicio" value="Mantenimiento Económico">
+					<label  for="servicio2">Mantenimiento Económico</label><br>
+					<input type="radio" id="servicio" name="servicio" value="Mantenimiento Básico">
+					<label  for="servicio3">Mantenimiento Básico</label><br></br>
+
+				</br><label for="cliente"> Adjunte una imagen de la moto: </label></br></br>
+				<input type="file" id="imagen"><br>
+
+				
+					
+			</div>
+				
+			
+				
+		</form>
+		
+		
+			
+						
+			<button  class="btnagendar" onclick="toggleCaja('cajaform');mostrarCaja(); leer()">AGENDAR CITA DE SERVICIO</button>
+			
+			
+	</div>
+	
+	
+	<div class="cajapdf" id="cajapdf" style="text-align: center; margin-top: 20px; display: none; " >
+
+	
+	<iframe id="ifpdf" class="ifpdf" src="" frameboarder="0" style="width: 80%; height: 900px; display: none; margin: auto;"></iframe>
+	<button style="margin: auto; margin-top: 20px;" id="generarpdf" onclick="mostrarpdf(); generar();">Generar PDF</button>
+
+	</div>
+	
+
+</div>
+
+
+<footer style="margin-top: 200px; background: gray; font-family: Boldonse, system-ui; text-align:center;  border: 6px solid black; color: white;padding-top: 20px; padding-bottom: 20px; ">
+	<h5>Página web desarrollada para la materia de Programación Web I.<br>Primavera 2025.<br> Universidad politécnica de San Luis Potosí</h5>
+
+
+</footer>
+
+</div>
+
+</body>
+</html>
