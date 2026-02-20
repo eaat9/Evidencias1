@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Introduce cadena</p>
+<button onclick="myFunction()">cadena:</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let cadena = prompt("Cadena","hola a todos");
+  let palabras = cadena.split(" ");
+  let token = "";
+  let car1;
+  let car2;
+  let pal = "";
+
+  if (cadena != null) {
+    document.getElementById("demo").innerHTML = cadena;
+    alert(palabras);
+
+    for (token in palabras) {
+
+      if (palabras[token].length === 1) {
+        pal = palabras[token].toUpperCase();
+      } 
+      else {
+        car1 = palabras[token].charAt(0).toUpperCase();
+        car2 = palabras[token].charAt(palabras[token].length - 1).toUpperCase();
+
+        pal = car1 + palabras[token].substring(1, palabras[token].length - 1) + car2;
+      }
+
+      alert(pal);
+    }
+  }
+}
+</script>
+
+</body>
+</html>
