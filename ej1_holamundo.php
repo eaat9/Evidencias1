@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
       <meta charset="utf-8">
@@ -10,4 +10,8 @@
       echo "Hola Mundo";
 ?>
 </body>
+<footer>
+      <br>
+      <p>Emilio Abraham Araiza Toledo 186349</p>
+</footer>
 </html>
