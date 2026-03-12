@@ -20,7 +20,13 @@ $texto = '<table border=1>
 </tr>';
 
 for($i=0;$i<5;$i++){
-    $texto .= '<tr>';
+
+    if($i % 2 == 0){
+        $texto .= '<tr style="background-color:lightblue;">';
+    }else{
+        $texto .= '<tr>';
+    }
+
     $texto .= '<td>'.$nom[$i].'</td>';
 
     $suma = 0;
@@ -55,7 +61,7 @@ echo "No Aprobados :<img src='na.jpg' height='10px' width='".($cont_na*20)."'> "
 ?>
 </body>
 <footer>
-  <br>
-  <p>Emilio Abraham Araiza Toledo 186349</p>
+    <br>
+    <p>Emilio Abraham Araiza Toledo 186349</p>
 </footer>
 </html>
