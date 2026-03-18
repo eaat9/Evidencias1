@@ -1,86 +1,152 @@
 <!DOCTYPE html>
-<!-- Esta es miprimera página web Desarrollado por: Emilio Araiza fecha 06/02/2025 -->
-<html>
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" 
-	content="width=device-width, 
-	initial-scale=1">
-	<title>Portafolio de evidencias</title>
-	<link rel="icon" type="image/vnd.jpg" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/UPSLP.jpg/270px-UPSLP.jpg">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portafolio de evidencias</title>
+
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/UPSLP.jpg/270px-UPSLP.jpg">
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    header {
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #eee;
+    }
+
+    header h1 {
+        margin: 10px 0;
+        color: #2a5298;
+    }
+
+    header h2 {
+        margin: 5px 0;
+        font-weight: normal;
+        color: #555;
+    }
+
+    section {
+        margin-top: 25px;
+    }
+
+    h3 {
+        color: #1e3c72;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    li {
+        margin: 8px 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #2a5298;
+        padding: 8px 12px;
+        display: inline-block;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        background: #2a5298;
+        color: white;
+        transform: scale(1.05);
+    }
+
+    .info {
+        line-height: 1.8;
+        color: #333;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 30px;
+        padding: 15px;
+        background: #1e3c72;
+        color: white;
+        border-radius: 0 0 15px 15px;
+    }
+</style>
 
 </head>
 
-<body style="background-color: beige;">
+<body>
+
+<div class="container">
 
 <header>
-
-	<h1 style="background-color: brown;color: white; text-align: center;"> Portafolio de evidencia </h1>
-	<h1 style="text-align: center;">Programación web 2</h1>
-	<h1 style="text-align: center;">Ingeniera en tecnologías de la información</h1>
-	<h1 style="text-align: center;">Primavera 2026</h1>
-
+    <h1>Portafolio de Evidencias</h1>
+    <h2>Programación Web II</h2>
+    <h2>Ingeniería en Tecnologías de la Información</h2>
+    <h2>Primavera 2026</h2>
 </header>
 
-	<hr/>
-
-<section>
-
-	<h2>Universidad Politécnica de San Luis Potosí</h2>
-	<h2>Alumno: Emilio Abraham Araiza Toledo</h2>
-	<h2>Matricula: 186349</h2>
-	<h2>Semestre: 4°</h2>
-	<h2>Profesora: Roxana Georgina Herrera Herrera
-</h2>
-
-</section>	
-
-<hr/>
-
-<section>
-
-	<h2>Prácticas - Portafolio</h2>
-<ul>
-	<li>Parcial 1</li>
-		<ul>
-
-		<li><a href="dinamica.html">Practica 1: Tabla Imágenes</a></li>
-
-		<li><a href="cadena.html">Practica 2: Tokens con mayúscula la primera y ultima letra de cada palabra </a></li>
-
-		<li><a href="facturas.sql"> Practica 3: BD Facturas</a></li>
-
-		<li><a href="Banco.sql"> Practica 4: BD Cuenta (Banco)</a></li>
-
-		<li><a href="e_facturas.sql"> Practica 5: BD e_facturas</a></li>
-
-		<li><a href="futbol.sql"> Practica 6: BD futbol</a></li>
-
-		<li><a href="futbol.pdf"> Practica 7: BD futbol pdf</a></li>
-
-		<li><a href="tienda_online.sql"> Practica 8: BD tienda_online</a></li>
-
-		<li><a href="tienda_online.pdf"> Practica 9: BD tienda_online pdf</a></li>
-
-		</ul>
-	<li>Parcial 2</li>
-		<ul>
-		
-		</ul>
-	<li>Parcial 3</li>
-	<ul>
-	
-	</ul>
-	<li>FINAL</li>
-		<ul>
-	
-	</ul>
-</ul>
-
-<hr/>
-
+<section class="info">
+    <h3>Información</h3>
+    <p><strong>Universidad:</strong> Universidad Politécnica de San Luis Potosí</p>
+    <p><strong>Alumno:</strong> Emilio Abraham Araiza Toledo</p>
+    <p><strong>Matrícula:</strong> 186349</p>
+    <p><strong>Semestre:</strong> 4°</p>
+    <p><strong>Profesora:</strong> Roxana Georgina Herrera Herrera</p>
 </section>
 
-</body>
+<section>
+    <h3>Prácticas - Portafolio</h3>
 
+    <h4>Parcial 1</h4>
+    <ul>
+        <li><a href="dinamica.html">Práctica 1: Tabla Imágenes</a></li>
+        <li><a href="cadena.html">Práctica 2: Tokens</a></li>
+        <li><a href="facturas.sql">Práctica 3: BD Facturas</a></li>
+        <li><a href="Banco.sql">Práctica 4: BD Banco</a></li>
+        <li><a href="e_facturas.sql">Práctica 5: BD e_facturas</a></li>
+        <li><a href="futbol.sql">Práctica 6: BD fútbol</a></li>
+        <li><a href="futbol.pdf">Práctica 7: PDF fútbol</a></li>
+        <li><a href="tienda_online.sql">Práctica 8: BD tienda_online</a></li>
+        <li><a href="tienda_online.pdf">Práctica 9: PDF tienda_online</a></li>
+    </ul>
+
+    <h4>Parcial 2</h4>
+    <ul>
+        <li>Próximamente...</li>
+    </ul>
+
+    <h4>Parcial 3</h4>
+    <ul>
+        <li>Próximamente...</li>
+    </ul>
+
+    <h4>Final</h4>
+    <ul>
+        <li>Próximamente...</li>
+    </ul>
+</section>
+
+<footer>
+    Emilio Abraham Araiza Toledo 186349
+</footer>
+
+</div>
+
+</body>
 </html>
